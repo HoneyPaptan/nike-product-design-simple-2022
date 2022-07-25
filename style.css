@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+font-family: "Poppins", sans-serif;
+height: 100vh;
+overflow: hidden;
+background-color: black;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    list-style-type: none;
+
+    padding: 15px 15px 15px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo h2{
+    font-size: 2rem;
+    color: white;
+}
+
+
+.bigtexts h2,p{
+    color: white;
+    font-size: 60px;
+}
+
+.bigtexts{
+    text-align: center;
+}
+
+.image{
+    width: 85%;
+    position: absolute;
+    top: -43%;
+    left: 40%;
+    z-index: -10;
+    transform: rotate(-35deg);
+}
+
+.image img{
+    width: 100%; 
+    
+animation: fly 4s ease-in-out infinite;
+
+}
+
+.hero{
+    height: 100vh;
+}
+
+@keyframes fly {
+    0% {
+          transform: translate(-30%, -26%);
+    }
+
+    50% {
+          transform: translate(-30%, -24%);
+    }
+
+    100% {
+          transform: translate(-30%, -26%);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .image{
+        top: -12%;
+
+   }
+  }
+@media only screen and (max-width: 800px) {
+    .image{
+        top: -12%;
+        width: 100%;
+
+   }
+  }
+@media only screen and (max-width: 700px) {
+    .image{
+        top: -18%;
+        width: 120%;
+
+   }
+  }
+@media only screen and (max-width: 600px) {
+    .image{
+        top: -8%;
+        left: 28%;
+
+   }
+  }
+@media only screen and (max-width: 450px) {
+    .image{
+        width: 150%;
+        
+    top: 7%;
+    left: 28%;
+
+
+   }
+  }
+@media only screen and (max-width: 350px) {
+    .image{
+        width: 185%;
+
+
+   }
+   .bigtexts h2{
+    font-size: 50px;
+   }
+  }
